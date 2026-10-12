@@ -107,14 +107,14 @@ The frontend runs by default on:
 
 The API includes controllers for:
 
-- `AccountController` â€” registration and login
-- `AdminController` â€” admin operations
-- `PatientController` â€” patient management
-- `PharmacistController` â€” pharmacist management
-- `MedicationController` â€” medication catalog
-- `PrescriptionController` â€” prescription handling
-- `PrescriptionMedicationController` â€” prescription-medication links
-- `DispensedMedicationController` â€” dispensed medication management
+- `AccountController` registration and login
+- `AdminController` admin operations
+- `PatientController` patient management
+- `PharmacistController` pharmacist management
+- `MedicationController` medication catalog
+- `PrescriptionController` prescription handling
+- `PrescriptionMedicationController` prescription-medication links
+- `DispensedMedicationController` dispensed medication management
 
 ## Authentication
 
