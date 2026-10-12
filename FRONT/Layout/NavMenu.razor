@@ -1,0 +1,147 @@
+﻿@using FRONT.Services
+@inject AuthServices AuthService
+@inject NavigationManager Navigation
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">E-Pharmacy System</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="nav flex-column">
+        @if (isAuthenticated)
+        {
+            <div class="nav-item px-3">
+                <div class="nav-link text-muted">
+                    <small>Welcome, @username</small>
+                    <br />
+                    <small class="text-info">(@role)</small>
+                </div>
+            </div>
+
+            @if (role == "Admin")
+            {
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/admin/dashboard" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-speedometer2 me-2" aria-hidden="true"></span> Dashboard
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/admin/pharmacists" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-person-badge me-2" aria-hidden="true"></span> Pharmacists
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/admin/medications" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-capsule me-2" aria-hidden="true"></span> Medications
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/admin/dispensed" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-clipboard-check me-2" aria-hidden="true"></span> Dispensed History
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/admin/profile" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-person-circle me-2" aria-hidden="true"></span> Profile
+                    </NavLink>
+                </div>
+            }
+            else if (role == "Pharmacist")
+            {
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/pharmacist/dashboard" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-speedometer2 me-2" aria-hidden="true"></span> Dashboard
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/pharmacist/patients" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-people me-2" aria-hidden="true"></span> Patients
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/pharmacist/prescriptions" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-prescription2 me-2" aria-hidden="true"></span> Prescriptions
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/pharmacist/medications" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-capsule me-2" aria-hidden="true"></span> Medication Stock
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/pharmacist/dispense" Match="NavLinkMatch.Prefix">
+                        <span class="bi bi-cart-check me-2" aria-hidden="true"></span> Dispense
+                    </NavLink>
+                </div>
+            }
+
+            <div class="nav-item px-3 mt-4 border-top pt-2">
+                <button class="nav-link btn btn-outline-danger text-start w-100" @onclick="Logout">
+                    <span class="bi bi-box-arrow-right me-2" aria-hidden="true"></span> Logout
+                </button>
+            </div>
+        }
+        else
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                    <span class="bi bi-house-door me-2" aria-hidden="true"></span> Home
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/login" Match="NavLinkMatch.All">
+                    <span class="bi bi-box-arrow-in-right me-2" aria-hidden="true"></span> Login
+                </NavLink>
+            </div>
+        }
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+    private string role = string.Empty;
+    private string username = string.Empty;
+    private bool isAuthenticated = false;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            isAuthenticated = await AuthService.IsAuthenticated();
+            if (isAuthenticated)
+            {
+                role = await AuthService.GetRole() ?? string.Empty;
+                username = await AuthService.GetUsername() ?? string.Empty;
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading nav menu: {ex.Message}");
+        }
+    }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private async Task Logout()
+    {
+        try
+        {
+            await AuthService.logout();
+            Navigation.NavigateTo("/login", true);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error during logout: {ex.Message}");
+        }
+    }
+}

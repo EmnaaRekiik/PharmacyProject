@@ -1,0 +1,117 @@
+﻿@page "/pharmacist/patients/create"
+@using FRONT.Services
+@using pharmacy
+@inject FRONT.Services.PatientServices PatientService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Create New Patient</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="@patient" OnValidSubmit="@HandleCreate">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <InputText id="firstName" class="form-control" @bind-Value="patient.FirstName" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <InputText id="lastName" class="form-control" @bind-Value="patient.LastName" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                    <InputDate id="dateOfBirth" class="form-control" @bind-Value="patient.DateOfBirth" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <InputText id="phoneNumber" class="form-control" @bind-Value="patient.PhoneNumber" />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <InputText id="email" type="email" class="form-control" @bind-Value="patient.Email" />
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <InputTextArea id="address" class="form-control" rows="3" @bind-Value="patient.Address" />
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                    @if (isLoading)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2"></span>
+                    }
+                    Create Patient
+                </button>
+                <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private Patient patient = new Patient { DateOfBirth = DateTime.Now.AddYears(-30) };
+    private bool isLoading = false;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Pharmacist")
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private async Task HandleCreate()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var result = await PatientService.CreatePatient(patient);
+            if (result != null)
+            {
+                Navigation.NavigateTo("/pharmacist/patients");
+            }
+            else
+            {
+                errorMessage = "Failed to create patient.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error creating patient: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/pharmacist/patients");
+    }
+}

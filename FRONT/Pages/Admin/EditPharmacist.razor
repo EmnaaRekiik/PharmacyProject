@@ -1,0 +1,150 @@
+﻿@page "/admin/pharmacists/edit/{id:int}"
+@using pharmacy
+@inject FRONT.Services.PharmacistServices PharmacistService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Edit Pharmacist</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (pharmacist == null)
+{
+    <div class="alert alert-warning">Pharmacist not found.</div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <EditForm Model="@pharmacist" OnValidSubmit="@HandleUpdate">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <InputText id="firstName" class="form-control" @bind-Value="pharmacist.PharmacistName" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Pharmacy Name</label>
+                        <InputText id="lastName" class="form-control" @bind-Value="pharmacist.PharmacyName" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="licenseNumber" class="form-label">License Number</label>
+                        <InputText id="licenseNumber" class="form-control" @bind-Value="pharmacist.LicenseNumber" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <InputText id="phoneNumber" class="form-control" @bind-Value="pharmacist.PhoneNumber" />
+                    </div>
+                </div>
+
+@*                 <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <InputText id="email" type="email" class="form-control" @bind-Value="pharmacist.Email" />
+                </div> *@
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary" disabled="@isSaving">
+                        @if (isSaving)
+                        {
+                            <span class="spinner-border spinner-border-sm me-2"></span>
+                        }
+                        Update Pharmacist
+                    </button>
+                    <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Pharmacist pharmacist;
+    private bool isLoading = true;
+    private bool isSaving = false;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Admin")
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadPharmacist();
+    }
+
+    private async Task LoadPharmacist()
+    {
+        try
+        {
+            isLoading = true;
+            pharmacist = await PharmacistService.GetPharmacistAsync(Id);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading pharmacist: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task HandleUpdate()
+    {
+        isSaving = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var success = await PharmacistService.UpdatePharmacist(pharmacist);
+            if (success)
+            {
+                Navigation.NavigateTo("/admin/pharmacists");
+            }
+            else
+            {
+                errorMessage = "Failed to update pharmacist.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error updating pharmacist: {ex.Message}";
+        }
+        finally
+        {
+            isSaving = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/admin/pharmacists");
+    }
+}

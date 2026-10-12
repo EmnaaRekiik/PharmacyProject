@@ -1,0 +1,155 @@
+﻿@page "/pharmacist/patients/edit/{id:int}"
+@using pharmacy
+@inject FRONT.Services.PatientServices PatientService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Edit Patient</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (patient == null)
+{
+    <div class="alert alert-warning">Patient not found.</div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <EditForm Model="@patient" OnValidSubmit="@HandleUpdate">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <InputText id="firstName" class="form-control" @bind-Value="patient.FirstName" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <InputText id="lastName" class="form-control" @bind-Value="patient.LastName" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                        <InputDate id="dateOfBirth" class="form-control" @bind-Value="patient.DateOfBirth" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <InputText id="phoneNumber" class="form-control" @bind-Value="patient.PhoneNumber" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <InputText id="email" type="email" class="form-control" @bind-Value="patient.Email" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <InputTextArea id="address" class="form-control" rows="3" @bind-Value="patient.Address" />
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary" disabled="@isSaving">
+                        @if (isSaving)
+                        {
+                            <span class="spinner-border spinner-border-sm me-2"></span>
+                        }
+                        Update Patient
+                    </button>
+                    <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Patient patient;
+    private bool isLoading = true;
+    private bool isSaving = false;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Pharmacist")
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadPatient();
+    }
+
+    private async Task LoadPatient()
+    {
+        try
+        {
+            isLoading = true;
+            patient = await PatientService.GetPatientAsync(Id);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading patient: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task HandleUpdate()
+    {
+        isSaving = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var success = await PatientService.UpdatePatient(patient);
+            if (success)
+            {
+                Navigation.NavigateTo("/pharmacist/patients");
+            }
+            else
+            {
+                errorMessage = "Failed to update patient.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error updating patient: {ex.Message}";
+        }
+        finally
+        {
+            isSaving = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/pharmacist/patients");
+    }
+}

@@ -1,0 +1,290 @@
+﻿@page "/admin/dispensed"
+@using pharmacy
+@inject FRONT.Services.DispensedMedicationServices DispensedService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Dispensed Medications History</h3>
+
+<div class="mb-3">
+    <div class="card">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-calendar"></i>
+                        </span>
+                        <input type="date" class="form-control" @bind="filterDate" @bind:format="yyyy-MM-dd" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" @bind="pharmacistFilter">
+                        <option value="">All Pharmacists</option>
+                        @foreach (var pharmacist in pharmacists)
+                        {
+                            <option value="@pharmacist.PharmacistId">@pharmacist.PharmacistName</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary w-100" @onclick="ApplyFilters">
+                        <i class="bi bi-funnel me-1"></i> Apply Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (isLoading)
+{
+    <div class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Loading dispensed history...</p>
+    </div>
+}
+else if (filteredDispensedMedications == null || !filteredDispensedMedications.Any())
+{
+    <div class="alert alert-info">
+        <i class="bi bi-info-circle me-2"></i>
+        No dispensed medications found for the selected filters.
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Dispensed Medications</h5>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Date & Time</th>
+                            <th>Patient</th>
+                            <th>Medication</th>
+                            <th>Quantity</th>
+                            <th>Pharmacist</th>
+                            <th>Prescription ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in filteredDispensedMedications)
+                        {
+                            <tr>
+                                <td>@item.DispensedId</td>
+                                <td>
+                                    <div>@item.DeliveryDate.ToString("MM/dd/yyyy")</div>
+                                    <small class="text-muted">@item.DeliveryDate.ToString("HH:mm")</small>
+                                </td>
+                                <td>
+                                    @if (item.Prescription?.Patient != null)
+                                    {
+                                        <div>@item.Prescription.Patient.FirstName @item.Prescription.Patient.LastName</div>
+                                        <small class="text-muted">ID: @item.Prescription.Patient.PatientId</small>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">N/A</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (item.Medication != null)
+                                    {
+                                        <div>
+                                            <strong>@item.Medication.Name</strong>
+                                        </div>
+                                        <small class="text-muted">$@item.Medication.Price.ToString("F2") each</small>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">N/A</span>
+                                    }
+                                </td>
+                                <td>
+                                    <span class="badge bg-primary rounded-pill" style="font-size: 1em;">
+                                        @item.Quantity
+                                    </span>
+                                </td>
+                                <td>
+                                    @if (item.Pharmacist != null)
+                                    {
+                                        <div>@item.Pharmacist.PharmacistName</div>
+                                        <small class="text-muted">@item.Pharmacist.PharmacyName</small>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">N/A</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (item.Prescription != null)
+                                    {
+                                        <a href="/pharmacist/prescriptions/details/@item.PrescriptionId"
+                                           class="btn btn-sm btn-outline-info"
+                                           target="_blank"
+                                           title="View Prescription">
+                                            @item.PrescriptionId
+                                            <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">@item.PrescriptionId</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="text-muted">
+                        Total Records: <strong>@filteredDispensedMedications.Count</strong>
+                        @if (filterDate.HasValue)
+                        {
+                            <span> | Date: @filterDate.Value.ToString("MM/dd/yyyy")</span>
+                        }
+                        @if (!string.IsNullOrEmpty(pharmacistFilter))
+                        {
+                            <span> | Pharmacist: @pharmacists.FirstOrDefault(p => p.PharmacistId.ToString() == pharmacistFilter)?.PharmacistName</span>
+                        }
+                    </small>
+                </div>
+                <div>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="ResetFilters">
+                        <i class="bi bi-x-circle me-1"></i> Clear Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Statistics -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Total Items</h5>
+                    <h2 class="card-text">@filteredDispensedMedications.Sum(d => d.Quantity)</h2>
+                    <p class="text-muted">Medications Dispensed</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">Unique Patients</h5>
+                    <h2 class="card-text">@filteredDispensedMedications.Select(d => d.Prescription?.PatientId).Distinct().Count()</h2>
+                    <p class="text-muted">Patients Served</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-info">Unique Medications</h5>
+                    <h2 class="card-text">@filteredDispensedMedications.Select(d => d.MedicationId).Distinct().Count()</h2>
+                    <p class="text-muted">Different Medications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<DispensedMedication> allDispensedMedications = new();
+    private List<DispensedMedication> filteredDispensedMedications = new();
+    private List<Pharmacist> pharmacists = new();
+    private DateTime? filterDate = DateTime.Today;
+    private string pharmacistFilter = string.Empty;
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Admin")
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            isLoading = true;
+
+            // Load dispensed medications
+            allDispensedMedications = await DispensedService.GetDispensedMedicationsAsync() ?? new List<DispensedMedication>();
+
+            // Extract unique pharmacists from dispensed medications
+            var pharmacistIds = allDispensedMedications
+                .Where(d => d.Pharmacist != null)
+                .Select(d => d.Pharmacist)
+                .Distinct()
+                .ToList();
+
+            pharmacists = pharmacistIds.Select(p => new Pharmacist
+            {
+                PharmacistId = p.PharmacistId,
+                PharmacistName = p.PharmacistName,
+                PharmacyName = p.PharmacyName
+            }).ToList();
+
+            ApplyFilters();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading dispensed history: {ex.Message}");
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void ApplyFilters()
+    {
+        var filtered = allDispensedMedications.AsEnumerable();
+
+        // Apply date filter
+        if (filterDate.HasValue)
+        {
+            filtered = filtered.Where(d => d.DeliveryDate.Date == filterDate.Value.Date);
+        }
+
+        // Apply pharmacist filter
+        if (!string.IsNullOrEmpty(pharmacistFilter))
+        {
+            if (int.TryParse(pharmacistFilter, out int pharmacistId))
+            {
+                filtered = filtered.Where(d => d.PharmacistId == pharmacistId);
+            }
+        }
+
+        // Order by date (newest first)
+        filteredDispensedMedications = filtered
+            .OrderByDescending(d => d.DeliveryDate)
+            .ThenByDescending(d => d.DispensedId)
+            .ToList();
+    }
+
+    private void ResetFilters()
+    {
+        filterDate = null;
+        pharmacistFilter = string.Empty;
+        ApplyFilters();
+    }
+}

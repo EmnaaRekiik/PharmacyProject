@@ -1,0 +1,98 @@
+﻿@page "/login"
+@using pharmacy
+@inject FRONT.Services.AuthServices AuthService
+@inject NavigationManager Navigation
+
+<div class="login-wrapper">
+    <div class="login-container">
+        <div class="login-header">
+            <div class="login-icon">
+                <i class="bi bi-capsule-pill"></i>
+            </div>
+            <h3>E-Pharmacy System</h3>
+            <p>Sign in to your account</p>
+        </div>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="bi bi-exclamation-circle me-2"></i>
+                @errorMessage
+                <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+            </div>
+        }
+
+        <EditForm Model="@loginDTO" OnValidSubmit="@HandleLogin">
+            <DataAnnotationsValidator />
+
+            <div class="form-group">
+                <label class="form-label">Username</label>
+                <InputText class="login-input"
+                           @bind-Value="loginDTO.Username"
+                           placeholder="Enter your username" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <InputText type="password"
+                           class="login-input"
+                           @bind-Value="loginDTO.Password"
+                           placeholder="Enter your password" />
+            </div>
+
+            <button type="submit" class="btn-login" disabled="@isLoading">
+                @if (isLoading)
+                {
+                    <span class="spinner-border spinner-border-sm me-2"></span>
+                    <span>Signing in...</span>
+                }
+                else
+                {
+                    <span>Sign In</span>
+                }
+            </button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private LoginDTO loginDTO = new LoginDTO();
+    private string errorMessage = string.Empty;
+    private bool isLoading = false;
+
+    private async Task HandleLogin()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var success = await AuthService.login(loginDTO);
+
+            if (success)
+            {
+                var role = await AuthService.GetRole();
+                if (role == "Admin")
+                {
+                    Navigation.NavigateTo("/admin/dashboard");
+                }
+                else if (role == "Pharmacist")
+                {
+                    Navigation.NavigateTo("/pharmacist/dashboard");
+                }
+            }
+            else
+            {
+                errorMessage = "Invalid username or password. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}

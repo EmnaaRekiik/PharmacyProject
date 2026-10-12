@@ -1,0 +1,123 @@
+﻿@page "/admin/pharmacists/create"
+@using pharmacy
+@inject FRONT.Services.PharmacistServices PharmacistService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Create New Pharmacist</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="@pharmacistDTO" OnValidSubmit="@HandleCreate">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+
+            <!-- Account Information -->
+            <h5 class="mb-3">Account Information</h5>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="username" class="form-label">Username *</label>
+                    <InputText id="username" class="form-control" @bind-Value="pharmacistDTO.username" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <InputText id="email" type="email" class="form-control" @bind-Value="pharmacistDTO.email" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="password" class="form-label">Password *</label>
+                    <InputText id="password" type="password" class="form-control" @bind-Value="pharmacistDTO.password" />
+                </div>
+            </div>
+
+            <!-- Pharmacist Information -->
+            <h5 class="mb-3 mt-4">Pharmacist Information</h5>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="pharmacistName" class="form-label">Pharmacist Name *</label>
+                    <InputText id="pharmacistName" class="form-control" @bind-Value="pharmacistDTO.pharmacistName" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="pharmacyName" class="form-label">Pharmacy Name *</label>
+                    <InputText id="pharmacyName" class="form-control" @bind-Value="pharmacistDTO.pharmacyName" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="licenseNumber" class="form-label">License Number *</label>
+                    <InputText id="licenseNumber" class="form-control" @bind-Value="pharmacistDTO.licenseNumber" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number *</label>
+                    <InputText id="phoneNumber" class="form-control" @bind-Value="pharmacistDTO.phoneNumber" />
+                </div>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                    @if (isLoading)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2"></span>
+                    }
+                    Create Pharmacist
+                </button>
+                <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private CreatePharmacistDTO pharmacistDTO = new CreatePharmacistDTO();
+    private bool isLoading = false;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Admin")
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private async Task HandleCreate()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+        try
+        {
+            var result = await PharmacistService.CreatePharmacist(pharmacistDTO);
+            if (result != null)
+            {
+                Navigation.NavigateTo("/admin/pharmacists");
+            }
+            else
+            {
+                errorMessage = "Failed to create pharmacist.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error creating pharmacist: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/admin/pharmacists");
+    }
+}

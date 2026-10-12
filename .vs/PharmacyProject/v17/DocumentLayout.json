@@ -1,0 +1,1468 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\AppData\\Local\\Temp\\o0kaui2e..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\20251217170442_newmig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\20251217170442_newmig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\20251217170145_newnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\20251217170145_newnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\createpharmacistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\createpharmacistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\implementations\\dispensedmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\implementations\\dispensedmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\medications\\pharmacistmedication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\medications\\pharmacistmedication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\adminprofile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\adminprofile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\medicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\medicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\implementations\\medicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\implementations\\medicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\interfaces\\imedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\imedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\interfaces\\idispensedmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\idispensedmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\medicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\medicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\adminmedication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\adminmedication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\admindispensedhistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\admindispensedhistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\dispencedmedicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\dispencedmedicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\pharmacistslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\pharmacistslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\AppData\\Local\\Temp\\24d1ecf0-d7c2-4136-98a5-5b30e2258df8_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\MedicationsList.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\AppData\\Local\\Temp\\593ec7bd-4e7d-4ffb-9349-f9b56e03a38f_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\EditMedication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\AppData\\Local\\Temp\\ad81cd3b-bd65-4760-b2b4-827ef023e97a_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\CreateMedication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\prescriptionmedicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\prescriptionmedicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\pharmacistservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\pharmacistservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\perscriptionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\perscriptionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\patientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\patientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\services\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\services\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\prescriptions\\prescriptionslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\prescriptions\\prescriptionslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\prescriptions\\prescriptiondetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\prescriptions\\prescriptiondetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\prescriptions\\editprescription.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\prescriptions\\editprescription.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\prescriptions\\createprescription.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\prescriptions\\createprescription.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\patients\\patientslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\patients\\patientslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\patients\\patientdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\patients\\patientdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\patients\\editpatient.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\patients\\editpatient.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\pharmacists\\patients\\createpatient.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\pharmacists\\patients\\createpatient.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\editpharmacist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\editpharmacist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\pages\\admin\\createpharmacist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\pages\\admin\\createpharmacist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\prescriptionmedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\prescriptionmedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\pharmacist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\pharmacist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\medication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\medication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\dispensedmedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\dispensedmedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\createprescriptionmedicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\createprescriptionmedicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\createprescriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\createprescriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\interfaces\\iprescriptionmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\iprescriptionmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\interfaces\\ipharmacistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\ipharmacistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\interfaces\\iperscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\iperscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\implementations\\prescriptionmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\implementations\\prescriptionmedicationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\implementations\\pharmacistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\implementations\\pharmacistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\implementations\\perscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\implementations\\perscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\repositories\\implementations\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\repositories\\implementations\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\dtos\\createpharmacistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\dtos\\createpharmacistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\prescriptionmedicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\prescriptionmedicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\pharmacistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\pharmacistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\perscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\perscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\dispencedmedicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\dispencedmedicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\pharmacy\\updatedprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C475A8-13C7-4706-A3A5-3A8E93225343}|pharmacy\\pharmacy.csproj|solutionrelative:pharmacy\\updatedprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\source\\repos\\PharmacyProject---\\FRONT\\Pages\\Admin\\AdminProfile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\source\\repos\\PharmacyProject---\\API\\Controllers\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\20251215165324_addpharmacistidtopatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\20251215165324_addpharmacistidtopatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\20251211182513_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\20251211182513_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\applicationcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\applicationcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\20251215114157_pharmacistData-security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\front\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{127FB6DB-AC11-4B08-AD4A-965F39306466}|FRONT\\FRONT.csproj|solutionrelative:front\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\20251211181313_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\Migrations\\20251211110238_fixPharmacistIdType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\20251217164258_please.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\20251217164258_please.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|c:\\users\\lenovo\\desktop\\cours cycle ing info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\pharmacyproject\\pharmacyproject\\api\\migrations\\20251217170024_fml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D65AFA2-20DC-427C-9A50-65D3B50E1B64}|API\\API.csproj|solutionrelative:api\\migrations\\20251217170024_fml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\AppData\\Local\\Temp\\o0kaui2e..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 554,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\o0kaui2e..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\o0kaui2e..sql",
+              "ToolTip": "SQLQuery1.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-17T17:12:08.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAYwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-17T16:57:19.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminDashboard.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminDashboard.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\AdminDashboard.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminDashboard.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\AdminDashboard.razor",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAUwNwAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:19:51.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-02T00:01:21.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "API.csproj",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\API.csproj",
+              "RelativeDocumentMoniker": "API\\API.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\API.csproj",
+              "RelativeToolTip": "API\\API.csproj",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAwAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T13:40:24.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MedicationServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\MedicationServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\MedicationServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\MedicationServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\MedicationServices.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:42:20.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PharmacistMedication.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\PharmacistMedication.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Medications\\PharmacistMedication.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\PharmacistMedication.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Medications\\PharmacistMedication.razor",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAiwAsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:25:20.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Login.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Login.razor",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwE0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T13:48:47.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "20251217164258_please.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217164258_please.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20251217164258_please.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217164258_please.cs",
+              "RelativeToolTip": "API\\Migrations\\20251217164258_please.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:42:58.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreatePharmacistDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\CreatePharmacistDTO.cs",
+              "RelativeDocumentMoniker": "pharmacy\\CreatePharmacistDTO.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\CreatePharmacistDTO.cs",
+              "RelativeToolTip": "pharmacy\\CreatePharmacistDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T10:37:44.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DispensedMedicationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\DispensedMedicationRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Implementations\\DispensedMedicationRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\DispensedMedicationRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Implementations\\DispensedMedicationRepository.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAawDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:10:24.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:21:52.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminProfile.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAiwCEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:22:41.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MedicationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\MedicationRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Implementations\\MedicationRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\MedicationRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Implementations\\MedicationRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA0wEUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:51:19.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IMedicationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IMedicationRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IMedicationRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IMedicationRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IMedicationRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA/wA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:52:53.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IDispensedMedicationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IDispensedMedicationRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IDispensedMedicationRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IDispensedMedicationRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IDispensedMedicationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:10:12.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAqwG8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:46:45.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MedicationController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\MedicationController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MedicationController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\MedicationController.cs",
+              "RelativeToolTip": "API\\Controllers\\MedicationController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:09:52.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Program.cs",
+              "RelativeDocumentMoniker": "FRONT\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Program.cs",
+              "RelativeToolTip": "FRONT\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:43:32.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminMedication.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminMedication.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\AdminMedication.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminMedication.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\AdminMedication.razor",
+              "ViewState": "AgIAABsAAAAAAAAAAAASwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:20:34.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminDispensedHistory.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminDispensedHistory.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\AdminDispensedHistory.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\AdminDispensedHistory.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\AdminDispensedHistory.razor",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAiwCEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:20:57.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DispencedMedicationServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\DispencedMedicationServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\DispencedMedicationServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\DispencedMedicationServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\DispencedMedicationServices.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:17:58.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PharmacistsList.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\PharmacistsList.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\PharmacistsList.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\PharmacistsList.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\PharmacistsList.razor",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAiwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:04:30.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "FRONT\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "FRONT\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAiwJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T15:10:49.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MedicationsList.razor",
+              "DocumentMoniker": "C:\\Users\\ghars\\AppData\\Local\\Temp\\24d1ecf0-d7c2-4136-98a5-5b30e2258df8_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\MedicationsList.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\AppData\\Local\\Temp\\24d1ecf0-d7c2-4136-98a5-5b30e2258df8_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\MedicationsList.razor",
+              "ToolTip": "C:\\Users\\ghars\\AppData\\Local\\Temp\\24d1ecf0-d7c2-4136-98a5-5b30e2258df8_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\MedicationsList.razor [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\AppData\\Local\\Temp\\24d1ecf0-d7c2-4136-98a5-5b30e2258df8_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\MedicationsList.razor [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:10:26.55Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditMedication.razor",
+              "DocumentMoniker": "C:\\Users\\ghars\\AppData\\Local\\Temp\\593ec7bd-4e7d-4ffb-9349-f9b56e03a38f_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\EditMedication.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\AppData\\Local\\Temp\\593ec7bd-4e7d-4ffb-9349-f9b56e03a38f_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\EditMedication.razor",
+              "ToolTip": "C:\\Users\\ghars\\AppData\\Local\\Temp\\593ec7bd-4e7d-4ffb-9349-f9b56e03a38f_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\EditMedication.razor [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\AppData\\Local\\Temp\\593ec7bd-4e7d-4ffb-9349-f9b56e03a38f_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\EditMedication.razor [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:10:14.791Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateMedication.razor",
+              "DocumentMoniker": "C:\\Users\\ghars\\AppData\\Local\\Temp\\ad81cd3b-bd65-4760-b2b4-827ef023e97a_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\CreateMedication.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\AppData\\Local\\Temp\\ad81cd3b-bd65-4760-b2b4-827ef023e97a_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\CreateMedication.razor",
+              "ToolTip": "C:\\Users\\ghars\\AppData\\Local\\Temp\\ad81cd3b-bd65-4760-b2b4-827ef023e97a_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\CreateMedication.razor [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\AppData\\Local\\Temp\\ad81cd3b-bd65-4760-b2b4-827ef023e97a_PharmacyProject.zip.PharmacyProject.zip\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Medications\\CreateMedication.razor [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:09:49.634Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PerscriptionServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PerscriptionServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\PerscriptionServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PerscriptionServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\PerscriptionServices.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAcwH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:08:02.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PatientServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PatientServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\PatientServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PatientServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\PatientServices.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAUwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:07:43.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AdminServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\AdminServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\AdminServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\AdminServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\AdminServices.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAuwDkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:27:41.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PharmacistServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PharmacistServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\PharmacistServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PharmacistServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\PharmacistServices.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:21:31.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PrescriptionMedicationServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PrescriptionMedicationServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\PrescriptionMedicationServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\PrescriptionMedicationServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\PrescriptionMedicationServices.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:46:35.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Home.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T10:32:53.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Dashboard.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Dashboard.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Dashboard.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Dashboard.razor",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAiwKQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:16:42.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "FRONT\\Services\\AuthServices.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Services\\AuthServices.cs",
+              "RelativeToolTip": "FRONT\\Services\\AuthServices.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:21:29.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PrescriptionsList.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionsList.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionsList.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionsList.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionsList.razor",
+              "ViewState": "AgIAALQAAAAAAAAAAAAiwM0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:16:58.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PrescriptionDetails.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionDetails.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionDetails.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionDetails.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Prescriptions\\PrescriptionDetails.razor",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAiwL8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:16:55.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EditPrescription.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\EditPrescription.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Prescriptions\\EditPrescription.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\EditPrescription.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Prescriptions\\EditPrescription.razor",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAiwN4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T13:46:16.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreatePrescription.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\CreatePrescription.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Prescriptions\\CreatePrescription.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Prescriptions\\CreatePrescription.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Prescriptions\\CreatePrescription.razor",
+              "ViewState": "AgIAACcBAAAAAAAAAAAiwEABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:17:05.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PatientsList.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\PatientsList.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Patients\\PatientsList.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\PatientsList.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Patients\\PatientsList.razor",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAiwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:16:39.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PatientDetails.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\PatientDetails.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Patients\\PatientDetails.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\PatientDetails.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Patients\\PatientDetails.razor",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAiwLcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:17:09.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EditPatient.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\EditPatient.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Patients\\EditPatient.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\EditPatient.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Patients\\EditPatient.razor",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwJoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:16:36.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CreatePatient.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\CreatePatient.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Pharmacists\\Patients\\CreatePatient.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Pharmacists\\Patients\\CreatePatient.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Pharmacists\\Patients\\CreatePatient.razor",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAiwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:17:14.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "EditPharmacist.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\EditPharmacist.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\EditPharmacist.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\EditPharmacist.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\EditPharmacist.razor",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAiwJUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:04:22.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:50:27.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreatePharmacist.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\CreatePharmacist.razor",
+              "RelativeDocumentMoniker": "FRONT\\Pages\\Admin\\CreatePharmacist.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Pages\\Admin\\CreatePharmacist.razor",
+              "RelativeToolTip": "FRONT\\Pages\\Admin\\CreatePharmacist.razor",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAiwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T22:16:15.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PrescriptionMedication.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\PrescriptionMedication.cs",
+              "RelativeDocumentMoniker": "pharmacy\\PrescriptionMedication.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\PrescriptionMedication.cs",
+              "RelativeToolTip": "pharmacy\\PrescriptionMedication.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:02:01.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Pharmacist.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Pharmacist.cs",
+              "RelativeDocumentMoniker": "pharmacy\\Pharmacist.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Pharmacist.cs",
+              "RelativeToolTip": "pharmacy\\Pharmacist.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T16:26:58.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Patient.cs",
+              "RelativeDocumentMoniker": "pharmacy\\Patient.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Patient.cs",
+              "RelativeToolTip": "pharmacy\\Patient.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T13:22:12.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Medication.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Medication.cs",
+              "RelativeDocumentMoniker": "pharmacy\\Medication.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Medication.cs",
+              "RelativeToolTip": "pharmacy\\Medication.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T13:22:22.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "pharmacy\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\LoginDTO.cs",
+              "RelativeToolTip": "pharmacy\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T17:31:14.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DispensedMedication.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\DispensedMedication.cs",
+              "RelativeDocumentMoniker": "pharmacy\\DispensedMedication.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\DispensedMedication.cs",
+              "RelativeToolTip": "pharmacy\\DispensedMedication.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T13:21:54.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Prescription.cs",
+              "RelativeDocumentMoniker": "pharmacy\\Prescription.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\Prescription.cs",
+              "RelativeToolTip": "pharmacy\\Prescription.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T22:03:17.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CreatePrescriptionMedicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\CreatePrescriptionMedicationDto.cs",
+              "RelativeDocumentMoniker": "pharmacy\\CreatePrescriptionMedicationDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\CreatePrescriptionMedicationDto.cs",
+              "RelativeToolTip": "pharmacy\\CreatePrescriptionMedicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:00:51.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CreatePrescriptionDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\CreatePrescriptionDto.cs",
+              "RelativeDocumentMoniker": "pharmacy\\CreatePrescriptionDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\CreatePrescriptionDto.cs",
+              "RelativeToolTip": "pharmacy\\CreatePrescriptionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:00:44.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IPharmacistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPharmacistRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IPharmacistRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPharmacistRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IPharmacistRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:53:23.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IPerscriptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPerscriptionRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IPerscriptionRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPerscriptionRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IPerscriptionRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:35:25.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:53:07.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IPrescriptionMedicationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPrescriptionMedicationRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IPrescriptionMedicationRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Interfaces\\IPrescriptionMedicationRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IPrescriptionMedicationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:53:32.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PrescriptionMedicationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PrescriptionMedicationRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Implementations\\PrescriptionMedicationRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PrescriptionMedicationRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Implementations\\PrescriptionMedicationRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:52:07.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "PharmacistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PharmacistRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Implementations\\PharmacistRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PharmacistRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Implementations\\PharmacistRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwDUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:51:50.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "PerscriptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PerscriptionRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Implementations\\PerscriptionRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PerscriptionRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Implementations\\PerscriptionRepository.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAUwH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:35:41.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Implementations\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Repositories\\Implementations\\PatientRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Implementations\\PatientRepository.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAUwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:51:30.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "API\\DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "API\\DTOs\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:55:29.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "API\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "API\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:55:22.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "API\\Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "API\\Data\\ApplicationContext.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:49:47.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "PrescriptionMedicationController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PrescriptionMedicationController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PrescriptionMedicationController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PrescriptionMedicationController.cs",
+              "RelativeToolTip": "API\\Controllers\\PrescriptionMedicationController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:54:20.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "PerscriptionController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PerscriptionController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PerscriptionController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PerscriptionController.cs",
+              "RelativeToolTip": "API\\Controllers\\PerscriptionController.cs",
+              "ViewState": "AgIAACIBAAAAAAAAAIBJwD0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:33:32.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "API\\Data\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "API\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:50:02.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "CreatePharmacistDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\DTOs\\CreatePharmacistDTO.cs",
+              "RelativeDocumentMoniker": "API\\DTOs\\CreatePharmacistDTO.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\DTOs\\CreatePharmacistDTO.cs",
+              "RelativeToolTip": "API\\DTOs\\CreatePharmacistDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:50:12.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "API\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAA+wOUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:33:34.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "DispencedMedicationController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\DispencedMedicationController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\DispencedMedicationController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\DispencedMedicationController.cs",
+              "RelativeToolTip": "API\\Controllers\\DispencedMedicationController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAIBJwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:52:43.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "PharmacistController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PharmacistController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PharmacistController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\PharmacistController.cs",
+              "RelativeToolTip": "API\\Controllers\\PharmacistController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAuwKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:21:46.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "UpdatedProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\UpdatedProfileDto.cs",
+              "RelativeDocumentMoniker": "pharmacy\\UpdatedProfileDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\pharmacy\\UpdatedProfileDto.cs",
+              "RelativeToolTip": "pharmacy\\UpdatedProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:47:21.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "AdminProfile.razor",
+              "DocumentMoniker": "C:\\Users\\ghars\\source\\repos\\PharmacyProject---\\FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject---\\FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "ToolTip": "C:\\Users\\ghars\\source\\repos\\PharmacyProject---\\FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject---\\FRONT\\Pages\\Admin\\AdminProfile.razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T15:40:31.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ghars\\source\\repos\\PharmacyProject---\\API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject---\\API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ghars\\source\\repos\\PharmacyProject---\\API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject---\\API\\Controllers\\AdminController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:02:07.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20251215165324_AddPharmacistIdToPatient.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251215165324_AddPharmacistIdToPatient.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20251215165324_AddPharmacistIdToPatient.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251215165324_AddPharmacistIdToPatient.cs",
+              "RelativeToolTip": "API\\Migrations\\20251215165324_AddPharmacistIdToPatient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T16:53:24.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "20251211182513_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251211182513_InitialCreate.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20251211182513_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251211182513_InitialCreate.cs",
+              "RelativeToolTip": "API\\Migrations\\20251211182513_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:25:13.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "ApplicationContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "RelativeToolTip": "API\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T15:14:25.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "20251215114157_pharmacistData-security.cs",
+              "DocumentMoniker": "C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\20251215114157_pharmacistData-security.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject\\API\\20251215114157_pharmacistData-security.cs",
+              "ToolTip": "C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\20251215114157_pharmacistData-security.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject\\API\\20251215114157_pharmacistData-security.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:41:57.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\_Imports.razor",
+              "RelativeDocumentMoniker": "FRONT\\_Imports.razor",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\_Imports.razor",
+              "RelativeToolTip": "FRONT\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T13:48:53.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "FRONT\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\FRONT\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "FRONT\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAgwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-14T20:34:50.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20251211181313_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\20251211181313_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject\\API\\20251211181313_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\20251211181313_InitialCreate.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject\\API\\20251211181313_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:13:13.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "20251211110238_fixPharmacistIdType.cs",
+              "DocumentMoniker": "C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\Migrations\\20251211110238_fixPharmacistIdType.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject\\API\\Migrations\\20251211110238_fixPharmacistIdType.cs",
+              "ToolTip": "C:\\Users\\ghars\\source\\repos\\PharmacyProject\\API\\Migrations\\20251211110238_fixPharmacistIdType.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\ghars\\source\\repos\\PharmacyProject\\API\\Migrations\\20251211110238_fixPharmacistIdType.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T11:02:39.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": ".cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\.cs",
+              "RelativeDocumentMoniker": "API\\.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\.cs",
+              "RelativeToolTip": "API\\.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T16:38:52.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:49:38.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\WeatherForecast.cs",
+              "RelativeToolTip": "API\\WeatherForecast.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T00:11:48.581Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 266,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20251217170442_newmig.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217170442_newmig.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20251217170442_newmig.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217170442_newmig.cs",
+              "RelativeToolTip": "API\\Migrations\\20251217170442_newmig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:04:42.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20251217170145_newnew.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217170145_newnew.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20251217170145_newnew.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217170145_newnew.cs",
+              "RelativeToolTip": "API\\Migrations\\20251217170145_newnew.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:01:46.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20251217170024_fml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217170024_fml.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20251217170024_fml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Cours Cycle Ing Info\\deuxi\u00E8me ann\u00E9e\\premier semestre\\PharmacyProject\\PharmacyProject\\API\\Migrations\\20251217170024_fml.cs",
+              "RelativeToolTip": "API\\Migrations\\20251217170024_fml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:00:24.291Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

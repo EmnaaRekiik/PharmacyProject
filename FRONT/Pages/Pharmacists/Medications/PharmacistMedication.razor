@@ -1,0 +1,268 @@
+﻿@page "/pharmacist/medications"
+@using pharmacy
+@inject FRONT.Services.MedicationServices MedicationService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+@inject IJSRuntime JSRuntime
+
+<h3>Medication Stock Management</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle me-2"></i>
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle me-2"></i>
+        @successMessage
+        <button type="button" class="btn-close" @onclick="@(() => successMessage = string.Empty)"></button>
+    </div>
+}
+
+<div class="mb-3">
+    <input type="text" class="form-control" style="width: 300px;"
+           placeholder="Search medications..."
+           @bind="searchTerm"
+           @bind:event="oninput" />
+</div>
+
+@if (isLoading)
+{
+    <div class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (filteredMedications == null || !filteredMedications.Any())
+{
+    <div class="alert alert-info">
+        <i class="bi bi-info-circle me-2"></i>
+        No medications found.
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Current Stock</th>
+                    <th>New Stock</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var medication in filteredMedications)
+                {
+                    <tr class="@GetRowClass(medication)">
+                        <td>@medication.MedicationId</td>
+                        <td>@medication.Name</td>
+                        <td>@medication.Description</td>
+                        <td>$@medication.Price.ToString("F2")</td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="fw-bold">@medication.StockQuantity</span>
+                                @if (medication.StockQuantity < 10)
+                                {
+                                    <span class="badge bg-warning text-dark ms-2">
+                                        <i class="bi bi-exclamation-triangle me-1"></i> Low
+                                    </span>
+                                }
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number"
+                                   class="form-control form-control-sm"
+                                   style="width: 100px;"
+                                   @bind="stockUpdates[medication.MedicationId]"
+                                   @bind:event="oninput"
+                                   min="0"
+                                   placeholder="New stock" />
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-success"
+                                    @onclick="() => UpdateStock(medication.MedicationId)"
+                                    disabled="@(isUpdatingStock && updatingMedicationId == medication.MedicationId)">
+                                @if (isUpdatingStock && updatingMedicationId == medication.MedicationId)
+                                {
+                                    <span class="spinner-border spinner-border-sm"></span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-check-lg"></i>
+                                    <span>Update</span>
+                                }
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Stock Summary -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Low Stock Items</h5>
+                    <h2 class="card-text">@lowStockCount</h2>
+                    <p class="text-muted">Stock &lt; 10 units</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-danger">Out of Stock</h5>
+                    <h2 class="card-text">@outOfStockCount</h2>
+                    <p class="text-muted">Stock = 0 units</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">Total Items</h5>
+                    <h2 class="card-text">@totalStockCount</h2>
+                    <p class="text-muted">All stock items</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Medication> allMedications = new();
+    private List<Medication> filteredMedications = new();
+    private Dictionary<int, int?> stockUpdates = new();
+    private bool isLoading = true;
+    private bool isUpdatingStock = false;
+    private int? updatingMedicationId = null;
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
+    private string searchTerm = string.Empty;
+    private int lowStockCount = 0;
+    private int outOfStockCount = 0;
+    private int totalStockCount = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CheckAuthorization();
+        await LoadMedications();
+    }
+
+    private async Task CheckAuthorization()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Pharmacist")
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private async Task LoadMedications()
+    {
+        try
+        {
+            isLoading = true;
+            allMedications = await MedicationService.GetMedicationsAsync() ?? new List<Medication>();
+            ApplyFilters();
+
+            // Initialize stock updates dictionary
+            foreach (var med in allMedications)
+            {
+                stockUpdates[med.MedicationId] = med.StockQuantity;
+            }
+
+            // Calculate statistics
+            lowStockCount = allMedications.Count(m => m.StockQuantity < 10 && m.StockQuantity > 0);
+            outOfStockCount = allMedications.Count(m => m.StockQuantity == 0);
+            totalStockCount = allMedications.Sum(m => m.StockQuantity);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading medications: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void ApplyFilters()
+    {
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            filteredMedications = allMedications;
+        }
+        else
+        {
+            filteredMedications = allMedications.Where(m =>
+                m.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                (m.Description != null && m.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            ).ToList();
+        }
+    }
+
+    private async Task UpdateStock(int medicationId)
+    {
+        if (!stockUpdates.ContainsKey(medicationId) || !stockUpdates[medicationId].HasValue)
+        {
+            errorMessage = "Please enter a stock quantity";
+            return;
+        }
+
+        var newStock = stockUpdates[medicationId].Value;
+        if (newStock < 0)
+        {
+            errorMessage = "Stock quantity cannot be negative";
+            return;
+        }
+
+        isUpdatingStock = true;
+        updatingMedicationId = medicationId;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var success = await MedicationService.UpdateMedicationStock(medicationId, newStock);
+            if (success)
+            {
+                successMessage = "Stock updated successfully!";
+                await LoadMedications(); // Reload to show updated stock
+            }
+            else
+            {
+                errorMessage = "Failed to update stock. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error updating stock: {ex.Message}";
+        }
+        finally
+        {
+            isUpdatingStock = false;
+            updatingMedicationId = null;
+        }
+    }
+
+    private string GetRowClass(Medication medication)
+    {
+        if (medication.StockQuantity == 0) return "table-danger";
+        if (medication.StockQuantity < 10) return "table-warning";
+        return "";
+    }
+}

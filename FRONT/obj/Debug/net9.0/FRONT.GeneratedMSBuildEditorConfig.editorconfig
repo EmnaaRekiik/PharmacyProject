@@ -1,0 +1,125 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = FRONT
+build_property.RootNamespace = FRONT
+build_property.ProjectDir = C:\Users\lenovo\Desktop\Cours Cycle Ing Info\2.deuxième année\premier semestre\PharmacyProject\PharmacyProject\FRONT\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lenovo\Desktop\Cours Cycle Ing Info\2.deuxième année\premier semestre\PharmacyProject\PharmacyProject\FRONT
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/AdminDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5EYXNoYm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/AdminDispensedHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5EaXNwZW5zZWRIaXN0b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/AdminMedication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5NZWRpY2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/AdminProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5Qcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/CreatePharmacist.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3JlYXRlUGhhcm1hY2lzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/EditPharmacist.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFBoYXJtYWNpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Admin/PharmacistsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGhhcm1hY2lzdHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Medications/PharmacistMedication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcTWVkaWNhdGlvbnNcUGhhcm1hY2lzdE1lZGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Patients/CreatePatient.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUGF0aWVudHNcQ3JlYXRlUGF0aWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Patients/EditPatient.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUGF0aWVudHNcRWRpdFBhdGllbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Patients/PatientDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUGF0aWVudHNcUGF0aWVudERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Patients/PatientsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUGF0aWVudHNcUGF0aWVudHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Prescriptions/CreatePrescription.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUHJlc2NyaXB0aW9uc1xDcmVhdGVQcmVzY3JpcHRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Prescriptions/EditPrescription.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUHJlc2NyaXB0aW9uc1xFZGl0UHJlc2NyaXB0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Prescriptions/PrescriptionDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUHJlc2NyaXB0aW9uc1xQcmVzY3JpcHRpb25EZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Pharmacists/Prescriptions/PrescriptionsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhhcm1hY2lzdHNcUHJlc2NyaXB0aW9uc1xQcmVzY3JpcHRpb25zTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-kotck4jhi0
+
+[C:/Users/lenovo/Desktop/Cours Cycle Ing Info/2.deuxième année/premier semestre/PharmacyProject/PharmacyProject/FRONT/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-bbmpghaffa

@@ -1,0 +1,22 @@
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\bin\Debug\net9.0\pharmacy.deps.json
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\bin\Debug\net9.0\pharmacy.dll
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\bin\Debug\net9.0\pharmacy.pdb
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.AssemblyInfoInputs.cache
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.AssemblyInfo.cs
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.csproj.CoreCompileInputs.cache
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.dll
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\refint\pharmacy.dll
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.pdb
+C:\Users\ghars\source\repos\PharmacyProject\pharmacy\obj\Debug\net9.0\ref\pharmacy.dll
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\bin\Debug\net9.0\pharmacy.deps.json
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\bin\Debug\net9.0\pharmacy.dll
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\bin\Debug\net9.0\pharmacy.pdb
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.dll
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\refint\pharmacy.dll
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\pharmacy.pdb
+C:\Users\lenovo\Desktop\Cours Cycle Ing Info\deuxième année\premier semestre\PharmacyProject\PharmacyProject\pharmacy\obj\Debug\net9.0\ref\pharmacy.dll

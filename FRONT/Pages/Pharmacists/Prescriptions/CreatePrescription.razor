@@ -1,0 +1,321 @@
+﻿@page "/pharmacist/prescriptions/create"
+@using pharmacy
+@inject FRONT.Services.PrescriptionServices PrescriptionService
+@inject FRONT.Services.PatientServices PatientService
+@inject FRONT.Services.MedicationServices MedicationService
+@inject FRONT.Services.PrescriptionMedicationServices PrescriptionMedicationService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Create New Prescription</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (dataLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <EditForm Model="@createDto" OnValidSubmit="@HandleCreate">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <div class="mb-3">
+                    <label for="patientId" class="form-label">Patient</label>
+                    <InputSelect id="patientId" class="form-select" @bind-Value="createDto.PatientId">
+                        <option value="0">-- Select Patient --</option>
+                        @if (patients != null)
+                        {
+                            @foreach (var patient in patients)
+                            {
+                                <option value="@patient.PatientId">@patient.FirstName @patient.LastName</option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label for="instructions" class="form-label">Instructions</label>
+                    <InputTextArea id="instructions" class="form-control" rows="4" @bind-Value="createDto.Instructions" placeholder="Enter general prescription instructions..." />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Medications</label>
+                    <div class="border rounded p-3 mb-3" style="background-color: #f8f9fa;">
+                        @if (selectedMedications.Any())
+                        {
+                            <div class="mb-3">
+                                @foreach (var med in selectedMedications)
+                                {
+                                    <div class="d-flex justify-content-between align-items-center mb-2 p-2 border rounded bg-white">
+                                        <div>
+                                            <strong>@med.MedicationName</strong>
+                                            <br />
+                                            <small class="text-muted">@med.DosageInstructions - Quantity: @med.Quantity</small>
+                                        </div>
+                                        <button type="button" class="btn btn-sm btn-danger" @onclick="() => RemoveMedication(med)">Remove</button>
+                                    </div>
+                                }
+                            </div>
+                        }
+
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <select class="form-select" @bind="selectedMedicationId">
+                                    <option value="0">-- Select Medication --</option>
+                                    @if (medications != null)
+                                    {
+                                        @foreach (var medication in medications)
+                                        {
+                                            <option value="@medication.MedicationId">@medication.Name</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" @bind="dosageInstructions" placeholder="Dosage (e.g., 500mg twice daily)" />
+                            </div>
+                            <div class="col-md-2">
+                                <input type="number" class="form-control" @bind="quantity" placeholder="Qty" min="1" />
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-success w-100" @onclick="AddMedication">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <strong>Note:</strong> You can add multiple medications to this prescription before creating it.
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                        @if (isLoading)
+                        {
+                            <span class="spinner-border spinner-border-sm me-2"></span>
+                        }
+                        Create Prescription
+                    </button>
+                    <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int? PatientId { get; set; }
+
+    private class MedicationItem
+    {
+        public int MedicationId { get; set; }
+        public string MedicationName { get; set; }
+        public string DosageInstructions { get; set; }
+        public int Quantity { get; set; }
+    }
+
+    private CreatePrescriptionDto createDto = new();
+    private List<Patient> patients;
+    private List<Medication> medications;
+    private List<MedicationItem> selectedMedications = new();
+
+    private int selectedMedicationId = 0;
+    private string dosageInstructions = "";
+    private int quantity = 1;
+
+    private bool isLoading = false;
+    private bool dataLoading = true;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Pharmacist")
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadData();
+
+        if (PatientId.HasValue)
+        {
+            createDto.PatientId = PatientId.Value;
+        }
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            dataLoading = true;
+            patients = await PatientService.GetPatientsAsync();
+            medications = await MedicationService.GetMedicationsAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading data: {ex.Message}";
+        }
+        finally
+        {
+            dataLoading = false;
+        }
+    }
+
+    private void AddMedication()
+    {
+        if (selectedMedicationId == 0)
+        {
+            errorMessage = "Please select a medication.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(dosageInstructions))
+        {
+            errorMessage = "Please enter dosage instructions.";
+            return;
+        }
+
+        if (quantity < 1)
+        {
+            errorMessage = "Quantity must be at least 1.";
+            return;
+        }
+
+        var medication = medications.FirstOrDefault(m => m.MedicationId == selectedMedicationId);
+        if (medication == null) return;
+
+        if (selectedMedications.Any(m => m.MedicationId == selectedMedicationId))
+        {
+            errorMessage = "This medication is already added.";
+            return;
+        }
+
+        selectedMedications.Add(new MedicationItem
+        {
+            MedicationId = selectedMedicationId,
+            MedicationName = medication.Name,
+            DosageInstructions = dosageInstructions,
+            Quantity = quantity
+        });
+
+        selectedMedicationId = 0;
+        dosageInstructions = "";
+        quantity = 1;
+        errorMessage = string.Empty;
+    }
+
+    private void RemoveMedication(MedicationItem med)
+    {
+        selectedMedications.Remove(med);
+    }
+
+    private async Task HandleCreate()
+    {
+        if (createDto.PatientId == 0)
+        {
+            errorMessage = "Please select a patient.";
+            return;
+        }
+
+        if (!selectedMedications.Any())
+        {
+            errorMessage = "Please add at least one medication to the prescription.";
+            return;
+        }
+
+        isLoading = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            // Convert DTO to Prescription
+            var prescription = new Prescription
+            {
+                PatientId = createDto.PatientId,
+                Instructions = createDto.Instructions
+                // PharmacistId and other fields will be set by the API
+            };
+
+            var createdPrescription = await PrescriptionService.CreatePrescription(prescription);
+
+            if (createdPrescription != null)
+            {
+                // Track successful and failed medications
+                var successCount = 0;
+                var failedMedications = new List<string>();
+
+                foreach (var med in selectedMedications)
+                {
+                    try
+                    {
+                        var medDto = new CreatePrescriptionMedicationDto
+                        {
+                            PrescriptionId = createdPrescription.PrescriptionId,
+                            MedicationId = med.MedicationId,
+                            Quantity = med.Quantity,
+                            DosageInstructions = med.DosageInstructions
+                        };
+
+                        var result = await PrescriptionMedicationService.AddPrescriptionMedication(medDto);
+
+                        if (result != null)
+                        {
+                            successCount++;
+                        }
+                        else
+                        {
+                            failedMedications.Add(med.MedicationName);
+                        }
+                    }
+                    catch (Exception medEx)
+                    {
+                        failedMedications.Add($"{med.MedicationName} ({medEx.Message})");
+                    }
+                }
+
+                if (failedMedications.Any())
+                {
+                    errorMessage = $"Prescription created but {failedMedications.Count} medication(s) failed to add: {string.Join(", ", failedMedications)}. " +
+                                  $"Successfully added: {successCount}. Please edit the prescription to add missing medications.";
+
+                   
+                }
+
+                Navigation.NavigateTo("/pharmacist/prescriptions");
+            }
+            else
+            {
+                errorMessage = "Failed to create prescription. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error creating prescription: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/pharmacist/prescriptions");
+    }
+}

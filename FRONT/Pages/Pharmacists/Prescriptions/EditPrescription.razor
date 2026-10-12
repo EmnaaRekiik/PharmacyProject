@@ -1,0 +1,479 @@
+﻿@page "/pharmacist/prescriptions/edit/{id:int}"
+@using pharmacy
+@inject FRONT.Services.PrescriptionServices PrescriptionService
+@inject FRONT.Services.PatientServices PatientService
+@inject FRONT.Services.MedicationServices MedicationService
+@inject FRONT.Services.PrescriptionMedicationServices PrescriptionMedicationService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+@inject IJSRuntime JSRuntime
+
+<h3>Edit Prescription</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @successMessage
+        <button type="button" class="btn-close" @onclick="@(() => successMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (dataLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (prescription == null)
+{
+    <div class="alert alert-warning">Prescription not found.</div>
+}
+else
+{
+    @if (originalStatus == "Dispensed")
+    {
+        <div class="alert alert-warning">
+            <i class="bi bi-exclamation-triangle"></i>
+            <strong>Warning:</strong> This prescription has been dispensed and cannot be modified.
+        </div>
+    }
+
+    <div class="card mb-3">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Prescription Details</h5>
+        </div>
+        <div class="card-body">
+            <EditForm Model="@prescription" OnValidSubmit="@HandleUpdate">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <fieldset disabled="@(originalStatus == "Dispensed")">
+                    <div class="mb-3">
+                        <label for="patientId" class="form-label">Patient *</label>
+                        <InputSelect id="patientId" class="form-select" @bind-Value="prescription.PatientId">
+                            <option value="0">-- Select Patient --</option>
+                            @if (patients != null)
+                            {
+                                @foreach (var patient in patients)
+                                {
+                                    <option value="@patient.PatientId">@patient.FirstName @patient.LastName</option>
+                                }
+                            }
+                        </InputSelect>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="prescriptionDate" class="form-label">Prescription Date</label>
+                            <InputDate id="prescriptionDate" class="form-control" @bind-Value="prescription.PrescriptionDate" />
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="status" class="form-label">Status *</label>
+                            @if (originalStatus == "Dispensed")
+                            {
+                                <input type="text" class="form-control" value="Dispensed" disabled />
+                                <small class="text-muted d-block mt-1">
+                                    <i class="bi bi-lock-fill"></i> Dispensed prescriptions cannot be modified
+                                </small>
+                            }
+                            else
+                            {
+                                <InputSelect id="status" class="form-select" @bind-Value="prescription.Status">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Dispensed">Dispensed</option>
+                                    <option value="Cancelled">Cancelled</option>
+                                </InputSelect>
+                                @if (prescription.Status == "Dispensed")
+                                {
+                                    <small class="text-warning d-block mt-1">
+                                        <i class="bi bi-exclamation-triangle-fill"></i> <strong>Warning:</strong> Changing to "Dispensed" will automatically decrease medication stock
+                                    </small>
+                                }
+                            }
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="instructions" class="form-label">Instructions</label>
+                        <InputTextArea id="instructions" class="form-control" rows="4" @bind-Value="prescription.Instructions" placeholder="Enter prescription instructions..." />
+                    </div>
+                </fieldset>
+
+                <div class="d-flex gap-2">
+                    @if (originalStatus != "Dispensed")
+                    {
+                        <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                            @if (isLoading)
+                            {
+                                <span class="spinner-border spinner-border-sm me-2"></span>
+                            }
+                            else
+                            {
+                                <i class="bi bi-check-circle me-1"></i>
+                            }
+                            Update Prescription
+                        </button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-secondary" disabled>
+                            <i class="bi bi-lock-fill me-1"></i> Cannot Edit (Dispensed)
+                        </button>
+                    }
+                    <button type="button" class="btn btn-secondary" @onclick="Cancel">
+                        <i class="bi bi-arrow-left me-1"></i> Back
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+
+    <!-- Medications Section -->
+    <div class="card">
+        <div class="card-header bg-secondary text-white">
+            <h5 class="mb-0">Medications</h5>
+        </div>
+        <div class="card-body">
+            @if (originalStatus == "Dispensed")
+            {
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle"></i> Medications cannot be modified for dispensed prescriptions.
+                </div>
+            }
+
+            @if (prescriptionMedications == null || !prescriptionMedications.Any())
+            {
+                <div class="alert alert-warning">
+                    <i class="bi bi-exclamation-triangle"></i> No medications added to this prescription yet.
+                </div>
+            }
+            else
+            {
+                <div class="mb-3">
+                    @foreach (var med in prescriptionMedications)
+                    {
+                        <div class="d-flex justify-content-between align-items-center mb-2 p-3 border rounded bg-light">
+                            <div>
+                                <strong>@med.Medication?.Name</strong>
+                                <br />
+                                <small class="text-muted">
+                                    Dosage: @med.DosageInstructions | Quantity: @med.Quantity
+                                </small>
+                            </div>
+                            @if (originalStatus != "Dispensed")
+                            {
+                                <button type="button" class="btn btn-sm btn-danger"
+                                        @onclick="() => RemoveMedication(med.Id)"
+                                        disabled="@isDeletingMed">
+                                    @if (isDeletingMed)
+                                    {
+                                        <span class="spinner-border spinner-border-sm"></span>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi bi-trash"></i>
+                                    }
+                                    Remove
+                                </button>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+
+            @if (originalStatus != "Dispensed")
+            {
+                <hr />
+                <h6 class="mb-3">Add New Medication</h6>
+                <div class="border rounded p-3 bg-light">
+                    <div class="row g-2">
+                        <div class="col-md-4">
+                            <select class="form-select" @bind="selectedMedicationId">
+                                <option value="0">-- Select Medication --</option>
+                                @if (medications != null)
+                                {
+                                    @foreach (var medication in medications)
+                                    {
+                                        <option value="@medication.MedicationId">@medication.Name</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" @bind="dosageInstructions"
+                                   placeholder="Dosage (e.g., 500mg twice daily)" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" @bind="quantity"
+                                   placeholder="Qty" min="1" />
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success w-100"
+                                    @onclick="AddMedication"
+                                    disabled="@isAddingMed">
+                                @if (isAddingMed)
+                                {
+                                    <span class="spinner-border spinner-border-sm"></span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-plus-circle"></i>
+                                }
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Prescription prescription;
+    private List<Patient> patients;
+    private List<Medication> medications;
+    private List<PrescriptionMedication> prescriptionMedications;
+
+    private int selectedMedicationId = 0;
+    private string dosageInstructions = "";
+    private int quantity = 1;
+
+    private bool isLoading = false;
+    private bool dataLoading = true;
+    private bool isAddingMed = false;
+    private bool isDeletingMed = false;
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
+    private string originalStatus;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Pharmacist")
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            dataLoading = true;
+            prescription = await PrescriptionService.GetPrescriptionAsync(Id);
+            patients = await PatientService.GetPatientsAsync();
+            medications = await MedicationService.GetMedicationsAsync();
+            prescriptionMedications = await PrescriptionMedicationService.GetMedicationsByPrescriptionId(Id);
+
+            if (prescription == null)
+            {
+                errorMessage = "Prescription not found.";
+            }
+            else
+            {
+                originalStatus = prescription.Status;
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading data: {ex.Message}";
+        }
+        finally
+        {
+            dataLoading = false;
+        }
+    }
+
+    private async Task AddMedication()
+    {
+        if (originalStatus == "Dispensed")
+        {
+            errorMessage = "Cannot add medications to a dispensed prescription.";
+            return;
+        }
+
+        if (selectedMedicationId == 0)
+        {
+            errorMessage = "Please select a medication.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(dosageInstructions))
+        {
+            errorMessage = "Please enter dosage instructions.";
+            return;
+        }
+
+        if (quantity < 1)
+        {
+            errorMessage = "Quantity must be at least 1.";
+            return;
+        }
+
+        // Check if medication already exists
+        if (prescriptionMedications.Any(pm => pm.MedicationId == selectedMedicationId))
+        {
+            errorMessage = "This medication is already added to this prescription.";
+            return;
+        }
+
+        isAddingMed = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var medDto = new CreatePrescriptionMedicationDto
+            {
+                PrescriptionId = Id,
+                MedicationId = selectedMedicationId,
+                Quantity = quantity,
+                DosageInstructions = dosageInstructions
+            };
+
+            var result = await PrescriptionMedicationService.AddPrescriptionMedication(medDto);
+
+            if (result != null)
+            {
+                successMessage = "Medication added successfully!";
+
+                // Reload medications
+                prescriptionMedications = await PrescriptionMedicationService.GetMedicationsByPrescriptionId(Id);
+
+                // Reset form
+                selectedMedicationId = 0;
+                dosageInstructions = "";
+                quantity = 1;
+            }
+            else
+            {
+                errorMessage = "Failed to add medication.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error adding medication: {ex.Message}";
+        }
+        finally
+        {
+            isAddingMed = false;
+        }
+    }
+
+    private async Task RemoveMedication(int prescriptionMedicationId)
+    {
+        if (originalStatus == "Dispensed")
+        {
+            errorMessage = "Cannot remove medications from a dispensed prescription.";
+            return;
+        }
+
+        if (!await JSRuntime.InvokeAsync<bool>("confirm", "Are you sure you want to remove this medication?"))
+        {
+            return;
+        }
+
+        isDeletingMed = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var result = await PrescriptionMedicationService.DeletePrescriptionMedication(prescriptionMedicationId);
+
+            if (result)
+            {
+                successMessage = "Medication removed successfully!";
+
+                // Reload medications
+                prescriptionMedications = await PrescriptionMedicationService.GetMedicationsByPrescriptionId(Id);
+            }
+            else
+            {
+                errorMessage = "Failed to remove medication.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error removing medication: {ex.Message}";
+        }
+        finally
+        {
+            isDeletingMed = false;
+        }
+    }
+
+    private async Task HandleUpdate()
+    {
+        if (originalStatus == "Dispensed")
+        {
+            errorMessage = "Cannot modify a prescription that has already been dispensed.";
+            return;
+        }
+
+        if (prescription.PatientId == 0)
+        {
+            errorMessage = "Please select a patient.";
+            return;
+        }
+
+        isLoading = true;
+        errorMessage = string.Empty;
+        successMessage = string.Empty;
+
+        try
+        {
+            var updateDto = new Prescription
+            {
+                PrescriptionId = prescription.PrescriptionId,
+                PatientId = prescription.PatientId,
+                PharmacistId = prescription.PharmacistId,
+                PrescriptionDate = prescription.PrescriptionDate,
+                Status = prescription.Status,
+                Instructions = prescription.Instructions
+            };
+
+            var result = await PrescriptionService.UpdatePrescription(updateDto);
+
+            if (result)
+            {
+                successMessage = "Prescription updated successfully!";
+                await Task.Delay(1500);
+                Navigation.NavigateTo($"/pharmacist/prescriptions/details/{Id}");
+            }
+            else
+            {
+                errorMessage = "Failed to update prescription. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error updating prescription: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo($"/pharmacist/prescriptions/details/{Id}");
+    }
+}

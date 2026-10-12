@@ -1,0 +1,192 @@
+﻿@page "/pharmacist/prescriptions/details/{id:int}"
+@using pharmacy
+@inject FRONT.Services.PrescriptionServices PrescriptionService
+@inject NavigationManager Navigation
+@inject FRONT.Services.AuthServices AuthService
+
+<h3>Prescription Details</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="@(() => errorMessage = string.Empty)"></button>
+    </div>
+}
+
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (prescription == null)
+{
+    <div class="alert alert-warning">Prescription not found.</div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h5>Prescription Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Prescription ID:</strong> @prescription.PrescriptionId</p>
+                            <p><strong>Date:</strong> @prescription.PrescriptionDate.ToShortDateString()</p>
+                            <p>
+                                <strong>Status:</strong>
+                                <span class="badge @GetStatusBadgeClass(prescription.Status)">
+                                    @prescription.Status
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            @if (prescription.Patient != null)
+                            {
+                                <p><strong>Patient:</strong> @prescription.Patient.FirstName @prescription.Patient.LastName</p>
+                            }
+                            @if (prescription.Pharmacist != null)
+                            {
+                                <p><strong>Prescribed By:</strong> @prescription.Pharmacist.PharmacistName</p>
+                            }
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div>
+                        <h6><strong>Instructions:</strong></h6>
+                        @if (!string.IsNullOrEmpty(prescription.Instructions))
+                        {
+                            <p class="text-muted">@prescription.Instructions</p>
+                        }
+                        else
+                        {
+                            <p class="text-muted fst-italic">No instructions provided</p>
+                        }
+                    </div>
+
+                    <hr />
+
+                    <div>
+                        <h6><strong>Medications:</strong></h6>
+                        @if (prescription.PrescriptionMedications != null && prescription.PrescriptionMedications.Any())
+                        {
+                            <div class="table-responsive">
+                                <table class="table table-sm table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Medication Name</th>
+                                            <th>Quantity</th>
+                                            <th>Dosage Instructions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var pm in prescription.PrescriptionMedications)
+                                        {
+                                            <tr>
+                                                <td>@(pm.Medication?.Name ?? "N/A")</td>
+                                                <td>@pm.Quantity</td>
+                                                <td>@(pm.DosageInstructions ?? "N/A")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-info">
+                                No medications added to this prescription yet.
+                            </div>
+                        }
+                    </div>
+
+                    <div class="mt-3">
+                        <button class="btn btn-warning me-2" @onclick="@(() => Navigation.NavigateTo($"/pharmacist/prescriptions/edit/{prescription.PrescriptionId}"))">
+                            <i class="bi bi-pencil"></i> Edit Prescription
+                        </button>
+                        <button class="btn btn-secondary" @onclick="@(() => Navigation.NavigateTo("/pharmacist/prescriptions"))">
+                            <i class="bi bi-arrow-left"></i> Back to List
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            @if (prescription.Patient != null)
+            {
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h6>Patient Details</h6>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Name:</strong> @prescription.Patient.FirstName @prescription.Patient.LastName</p>
+                        <p><strong>DOB:</strong> @prescription.Patient.DateOfBirth.ToShortDateString()</p>
+                        <p><strong>Phone:</strong> @prescription.Patient.PhoneNumber</p>
+                        <p><strong>Email:</strong> @prescription.Patient.Email</p>
+                        <button class="btn btn-sm btn-primary" @onclick="@(() => Navigation.NavigateTo($"/pharmacist/patients/details/{prescription.Patient.PatientId}"))">
+                            View Patient Profile
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Prescription prescription;
+    private bool isLoading = true;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var role = await AuthService.GetRole();
+        if (role != "Pharmacist")
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadPrescription();
+    }
+
+    private async Task LoadPrescription()
+    {
+        try
+        {
+            isLoading = true;
+            prescription = await PrescriptionService.GetPrescriptionAsync(Id);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading prescription: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private string GetStatusBadgeClass(string status)
+    {
+        return status switch
+        {
+            "Pending" => "bg-warning text-dark",
+            "Dispensed" => "bg-success",
+            "Cancelled" => "bg-danger",
+            _ => "bg-secondary"
+        };
+    }
+}
